@@ -14,7 +14,7 @@ pos leer_coord(pos a)
 {
 	printf("Ingresa la fila y la columna\n");
 	scanf("%d %d",&a.x , &a.y);
-	if(a.x<8||a.y<8){
+	while((a.x>8)||(a.y>8)||(a.x<1)||(a.y<1)){
 		printf("Pocisión fuera del tablero, ingrese otras coordenadas");
 		scanf("%d %d",&a.x , &a.y);
 	}
