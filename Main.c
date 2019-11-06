@@ -25,12 +25,15 @@ int main() {
 				caballo();
 				break;
 			case 5:
+				alfil();
+				break;
+			case 6:
 				printf("Adios\n");
 				break;
 			default:
 				printf("Opcion no valida\n");
 				break;
 		}
-	}while(op != 5);
+	}while(op != 6);
 	return 0;
 }
