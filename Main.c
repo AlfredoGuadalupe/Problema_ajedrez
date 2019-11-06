@@ -6,8 +6,6 @@ int torre();
 int main() {
 	int a,b;
 	int op;
-	menu();
-	scanf("%d",op);
 	do{
 		menu();
 		scanf("%d",&op);
