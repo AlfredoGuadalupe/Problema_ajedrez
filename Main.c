@@ -8,25 +8,29 @@ int main() {
 		scanf("%d",&op);
 		switch(op){
 			case 1:
-                                leer_coord(&a);
-                                leer_coord(&b);
+				leer_coord(&a);
+				leer_coord(&b);
 				torre(a,b);
 				break;
-			case 4: 
-                                leer_coord(&a);
-                                leer_coord(&b);
-                                rey(a,b);
+			case 2:
+				leer_coord(&a);
+				leer_coord(&b);
+				rey(a,b);
 				break;
 			case 3:
-                                leer_coord(&a);
-                                leer_coord(&b);
+				leer_coord(&a);
+				leer_coord(&b);
 				reina(a,b);
 				break;
 			case 4:
-				caballo();
+				leer_coord(&a);
+				leer_coord(&b);
+				caballo(a,b);
 				break;
 			case 5:
-				alfil();
+				leer_coord(&a);
+				leer_coord(&b);
+				alfil(a,b);
 				break;
 			case 6:
 				printf("Adios\n");
