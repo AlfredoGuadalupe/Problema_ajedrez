@@ -14,6 +14,10 @@ pos leer_coord(pos a)
 {
 	printf("Ingresa la fila y la columna\n");
 	scanf("%d %d",&a.x , &a.y);
+	if(a.x<8||a.y<8){
+		printf("Pocisión fuera del tablero, ingrese otras coordenadas");
+		scanf("%d %d",&a.x , &a.y);
+	}
 	return a;
 }
 void torre(pos a, pos b)
