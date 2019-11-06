@@ -1,7 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-
-int torre();
+#include "Funciones.h"
 
 int main() {
 	int a,b;
