@@ -1,20 +1,26 @@
 #include "Funciones.h"
 
 int main() {
-	int a,b;
+	pos a,b;
 	int op;
 	do{
 		menu();
 		scanf("%d",&op);
 		switch(op){
 			case 1:
-				torre();
+                                leer_coord(&a);
+                                leer_coord(&b);
+				torre(a,b);
 				break;
-			case 2:
-				rey();
+			case 4: 
+                                leer_coord(&a);
+                                leer_coord(&b);
+                                rey(a,b);
 				break;
 			case 3:
-				reina();
+                                leer_coord(&a);
+                                leer_coord(&b);
+				reina(a,b);
 				break;
 			case 4:
 				caballo();
