@@ -10,7 +10,7 @@ void menu()
 	printf("\t5. Alfil\n");
 	printf("\t6. Salir\n");
 }
-pos leer_coord(pos a)
+pos leer_coord(pos *a)
 {
 	printf("Ingresa la fila y la columna\n");
 	scanf("%d %d",&a.x , &a.y);
