@@ -65,5 +65,12 @@ void caballo(pos a, pos b)
 		}
 	}
 }
-
+void rey(pos a, pos b)
+{
+        if((a.x-b.x == 1)||(a.y-b.y == 1)){
+		printf("El movimiento para el rey es valido\n");
+	}else{
+		printf("El movimiento para la rey no es valido\n");	
+	}
+}
 
